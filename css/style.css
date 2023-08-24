@@ -1,0 +1,945 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#logoimg {
+    width: 45px;
+    margin: 5px 0 0 100px;
+}
+
+#header {
+    position: fixed;
+    background-color: rgba(227, 204, 164, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+#linediv {
+    position: relative;
+    left: 850px;
+    top: -30px;
+}
+
+ #header-hr {
+    position: absolute;
+    margin-left: -50px;
+    top: 25px;
+    width: 45px;
+    height: 2px;
+    border-style: none;
+    display: inline-block;
+    background-color: rgba(26, 62, 124, 0.8);
+} 
+
+#a-div {
+    position: relative;
+    left: 850px;
+    top: -40px;
+}
+
+#a-div a {
+    text-decoration: none;
+    color: rgb(26, 62, 124);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#container {
+    height: 100vh;
+    background-image: url(../Imgs/star.png);
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#content-p {
+    font-size: 50px;
+    color: black;
+}
+
+#content-h {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+#content-btn {
+    background-color: transparent;
+    width: 180px;
+    height: 70px;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: rgb(209, 209, 189);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(3, 10, 26);
+}
+
+#content-btn:hover {
+    opacity: 0.6;
+    background-color: rgb(3, 10, 26);
+    color: white;
+}
+
+#welcome-div {
+    position: relative;
+    height: 30vh;
+}
+
+#welcome-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#welcome-span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#wline {
+    background-color: rgba(120, 76, 161, 1);
+    margin-left: 163px;
+    width: 45px;
+    height: 3px;
+    border-style: none;
+}
+
+#welcome-container {
+    width: 85%;
+    margin: auto;
+    height: 50vh;
+}
+
+#welcome-cards {
+    text-align: center;
+    overflow: hidden;
+}
+
+#card {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 50px;
+    height: 200px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgba(120, 76, 161, 1);
+    border-radius: 15px;
+    position: relative;
+    background-color: rgba(120, 76, 161, 1);
+}
+
+#card p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+#card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../Imgs/starsbackground.jpg);
+    opacity: 0;
+    border-radius: 15px;
+
+}
+
+#card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+#section-container {
+    width: 100%;
+    height: 130vh;
+}
+
+#section-div {
+    position: relative;
+    height: 25vh;
+}
+
+#span-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#span-div span {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+#span-div hr {
+    background-color: rgb(17, 184, 255);
+    margin-left: 70px;
+    width: 80px;
+    height: 3px;
+    border-style: none;
+}
+
+
+#section {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 80px;
+    margin-bottom: 45px;
+    height: 280px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgba(120, 76, 161, 1);
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+
+#section-img {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+#section-img img {
+    width: 100%;
+    height: 40%;
+    top: 50%;
+    transform: translate(0%, 6%);
+}
+
+#section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 39, 0.4);
+    /* visibility: hidden; */
+    opacity: 0;
+    border-radius: 15px;
+}
+
+#section:hover #section-overlay {
+    /* visibility: visible; */
+    opacity: 1;
+    transition: 2s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center button {
+    border-radius: 15px;
+    border-style: none;
+    width: 130px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.center p {
+    font-size: 22px;
+    color: white;
+}
+
+.center a {
+    text-decoration: none;
+}
+
+#things-div {
+    position: relative;
+    height: 25vh;
+}
+
+#things-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+#tline {
+    background-color: rgba(2, 2, 61, 1);
+    margin-left: 210px;
+    margin-top: 10px;
+    width: 200px;
+    height: 3px;
+    border-style: none;
+}
+
+#things-container {
+    width: 85%;
+    margin: auto;
+    height: 50vh;
+}
+
+#things-cards {
+    text-align: center;
+    overflow: hidden;
+}
+
+#tcard {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 50px;
+    height: 200px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgba(120, 76, 161, 1);
+    border-radius: 15px;
+    position: relative;
+    background-color: rgba(2, 2, 61, 1);
+}
+
+#tcard p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+#tcard::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-image: url(../Imgs/starsbackground.jpg);
+    opacity: 0;
+    border-radius: 15px;
+
+}
+
+#tcard:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+#interview-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 350px;
+}
+
+#img-container {
+    position: absolute;
+    left: 750px;
+    top: 50px;
+}
+
+#interview-img {
+    width: 350px;
+    height: 70vh;
+}
+
+#img-circle {
+    border-style: ridge;
+    border-color: gray;
+    background-color: gray;
+    border-radius: 200px;
+    float: left;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 450px;
+    left: 215px;
+}
+
+#img-circle:hover {
+    border-color: rgb(97, 149, 255);
+    background-color: rgb(97, 149, 255);
+}
+
+#interview-content {
+    position: relative;
+    top: 150px;
+    margin-left: 80px;
+}
+
+#interview-content p {
+    margin-bottom: 35px;
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content-circle {
+    border-style: ridge;
+    border-color: gray;
+    border-radius: 200px;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#content-small-circle {
+    border-style: ridge;
+    border-color: rgb(97, 149, 255);
+    background-color: rgb(97, 149, 255);
+    border-radius: 200px;
+    margin-left: 10px;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    bottom: 19px;
+    left: 5.5px;
+}
+
+#space-astronaut-div {
+    position: relative;
+    top: 350px;
+    height: 50vh;
+    width: 100%;
+    background-image: url("../Imgs/space-astronaut.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#space-astronaut-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 39, 0.4);
+}
+
+#img-icon-container {
+    position: relative;
+    top: 130px;
+    margin-left: 120px;
+}
+
+#img-icon1 {
+    width: 50px;
+}
+
+#img-icon {
+    width: 50px;
+    margin-left: 300px;
+}
+
+
+#subscription {
+    height: 100vh;
+}
+
+#subscribe-container {
+    width: 100%;
+    margin: auto;
+    height: 50vh;
+    position: relative;
+    margin-top: 500px;
+}
+
+#subscribe-cards {
+    text-align: center;
+}
+
+#subscribe-card {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 100px;
+    height: 350px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: rgba(120, 76, 161, 1);
+    border-radius: 15px;
+    position: relative;
+    top: 200px;
+    /* background-color: rgba(120, 76, 161, 1); */
+    background-image: url(../Imgs/WhatsApp\ Image\ 2023-08-17\ at\ 08.43.26.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#period {
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+}
+
+#price {
+    position: relative;
+    bottom: 110px;
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#subscribe-card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    border-radius: 15px;
+}
+
+
+#subscribe-card:hover #price {
+    color: white;
+    transition: 2s;
+}
+
+#subscribe-card:hover #price-circle {
+    background-color: rgba(120, 76, 161, 1);
+    border-color: white;
+    transition: 2s;
+}
+
+#subscribe-card:hover button {
+    color: white;
+    background-color: rgba(120, 76, 161, 1);
+    transition: 2s;
+}
+
+#subscribe-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+
+#subscribe-card button {
+    position: relative;
+    top: 100px;
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+#subscribe-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#subscribe-span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#sline {
+    background-color: rgba(120, 76, 161, 1);
+    margin-left: 110px;
+    width: 100px;
+    height: 3px;
+    border-style: none;
+}
+
+#price-circle {
+    border-style: ridge;
+    border-color: gray;
+    background-color: white;
+    border-radius: 200px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+
+#space-game-div {
+    position: relative;
+    top: 350px;
+    height: 50vh;
+    width: 100%;
+    background-image: url("../Imgs/space-games.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#space-game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 39, 0.4);
+}
+
+#space-icon-container {
+    position: relative;
+    top: 130px;
+    margin-left: 120px;
+}
+
+#space-icon-content {
+    float: left;
+    margin-left: 100px;
+}
+
+#space-icon1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+#space-icon-content1 {
+    margin-left: 700px;
+}
+
+#space-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#game {
+    position: relative;
+    top: -45px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#toy {
+    position: relative;
+    top: -45px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#space-icon-content p {
+    font-size: 20px;
+    color: white;
+}
+
+#space-icon-content1 p {
+    font-size: 20px;
+    color: white;
+}
+
+#team-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 570px;
+}
+
+#team-div {
+    position: relative;
+    height: 25vh;
+}
+
+#team-span-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#team-span-div span {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+#team-span-div hr {
+    background-color: rgb(17, 184, 255);
+    margin-left: 70px;
+    width: 80px;
+    height: 3px;
+    border-style: none;
+}
+
+#team-cards {
+    position: relative;
+}
+
+#team {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 80px;
+    margin-bottom: 45px;
+    height: 280px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+
+#team-img {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+#team-img img {
+    width: 100%;
+    height: 40%;
+    top: 50%;
+    transform: translate(0%, 6%);
+}
+
+#team:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../Imgs/starsbackground.jpg);
+}
+
+#team:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+#team:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../Imgs/starsbackground.jpg);
+}
+
+#team:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+#team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    border-radius: 15px;
+}
+
+#team:hover #team-overlay {
+    visibility: visible;
+}
+
+#team-overlay a {
+    position: relative;
+    top: 15px;
+    right: 16px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(62, 166, 235);
+    color: #fff;
+    margin-left: auto;
+    line-height: 45px;
+}
+
+.team-center a {
+    text-decoration: none;
+}
+
+#news-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 730px;
+}
+
+#news-div {
+    position: relative;
+    height: 25vh;
+}
+
+#news-span-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#news-span-div span {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+#news-span-div hr {
+    background-color: rgba(120, 76, 161, 1);
+    margin-left: 63px;
+    width: 80px;
+    height: 3px;
+    border-style: none;
+}
+
+#news-cards {
+    position: relative;
+}
+
+#news {
+    float: left;
+    text-align: center;
+    width: 320px;
+    margin-left: 80px;
+    margin-bottom: 45px;
+    height: 500px;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+
+#news-img {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+#news-img img {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translate(0%, 6%);
+}
+
+#news:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../Imgs/starsbackground.jpg);
+}
+
+#news:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+#news-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#news-overlay p {
+    position: relative;
+    margin: auto;
+    top: 350px;
+    font-size: 18px;
+    color: rgb(65, 24, 104);
+    font-weight: 700;
+}
+
+#footer {
+    position: relative;
+    top: 910px;
+    background-image: url(../Imgs/star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vh;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#a-footer{
+    display: inline-block;
+    margin-bottom: 15px;
+    position: relative;
+    top: -65px;
+    right: 30px;
+}
+
+#a-footer a {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 70px;
+    position: relative;
+    border-radius: 50%;
+    color: rgb(184, 139, 96);
+}
+
+#footer p{
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
